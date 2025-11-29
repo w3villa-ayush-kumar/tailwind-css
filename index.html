@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>tailwind-css</title>
+  </head>
+  <body>
+    <h1 class="text-4xl font-bold text-blue-600 mb-3">Tailwind Heading One</h1>
+
+    <h2 class="text-2xl font-semibold text-gray-700 mb-2">
+      Tailwind Heading Two
+    </h2>
+
+    <h3 class="text-sm font-bold uppercase text-gray-800 mb-4">
+      Tailwind Heading Three
+    </h3>
+
+    <p class="text-base text-gray-600 max-w-md">
+      This is a paragraph styled using Tailwind CSS utility classes. It uses
+      muted text color, comfortable line height, and a maximum width to keep the
+      content readable.
+    </p>
+    <div class="p-6 space-y-4">
+      <div class="bg-blue-200 p-4 rounded">Box One</div>
+      <div class="bg-green-200 p-4 rounded">Box Two</div>
+      <div class="bg-red-200 p-4 rounded">Box Three</div>
+    </div>
+    <div class="p-5 flex flex-col md:flex-row items-center gap-3">
+      <button class="bg-gray-200 px-4 py-2 rounded">Filter</button>
+
+      <input
+        class="border flex-1 px-3 py-2 rounded"
+        placeholder="Search something..."
+        type="text"
+      />
+
+      <button class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+    </div>
+    <div class="p-6 flex flex-col md:flex-row gap-4">
+      <div class="bg-blue-300 w-full md:w-1/3 h-40 rounded p-4">
+        Fixed height box
+      </div>
+
+      <div class="bg-green-300 w-full md:w-2/3 h-auto min-h-40 rounded p-4">
+        Flexible box that grows with content
+      </div>
+    </div>
+    <div class="p-6 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div class="bg-blue-200 p-4 rounded">Card 1</div>
+      <div class="bg-blue-200 p-4 rounded">Card 2</div>
+      <div class="bg-blue-200 p-4 rounded">Card 3</div>
+      <div class="bg-blue-200 p-4 rounded">Card 4</div>
+      <div class="bg-blue-200 p-4 rounded">Card 5</div>
+      <div class="bg-blue-200 p-4 rounded">Card 6</div>
+    </div>
+    <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 bg-blue-500 text-white rounded">Blue Box</div>
+
+      <div class="p-4 bg-green-300 text-green-900 rounded">Green Box</div>
+
+      <div class="p-4 bg-red-500/60 text-white rounded">
+        Red Box with Opacity
+      </div>
+    </div>
+    <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 border border-gray-400 rounded">Thin gray border</div>
+
+      <div class="p-4 border-4 border-blue-500 rounded-lg">
+        Thick blue border
+      </div>
+
+      <div class="p-4 border-2 border-red-500 rounded-full">
+        Full radius circle-style border
+      </div>
+    </div>
+    <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 bg-white rounded shadow-sm">Small shadow</div>
+
+      <div class="p-4 bg-white rounded shadow-md">Medium shadow</div>
+
+      <div class="p-4 bg-white rounded shadow-xl">Extra-large shadow</div>
+    </div>
+    <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div class="p-4 bg-purple-500 text-white rounded">Solid Background</div>
+
+      <div
+        class="p-4 bg-linear-to-r from-blue-400 to-blue-700 text-white rounded"
+      >
+        Gradient Background
+      </div>
+
+      <div
+        class="p-4 bg-[url('https://picsum.photos/300')] bg-cover bg-center text-white rounded"
+      >
+        Image Background
+      </div>
+    </div>
+    <div class="sticky top-0 bg-white shadow p-4 mb-6">Sticky Header</div>
+
+    <div class="relative bg-gray-200 h-40 rounded p-4 mb-6">
+      Parent Box
+      <div
+        class="absolute bottom-2 right-2 bg-blue-500 text-white px-3 py-1 rounded"
+      >
+        Absolute Child
+      </div>
+    </div>
+
+    <button
+      class="fixed top-4 right-4 bg-red-500 text-white px-4 py-2 rounded shadow-lg"
+    >
+      Fixed Button
+    </button>
+    <div class="p-6 grid grid-cols-1 md:grid-cols-3 gap-4">
+      <div
+        class="p-4 bg-blue-500 text-white rounded transition-colors duration-300 hover:bg-blue-700"
+      >
+        Hover to Change Color
+      </div>
+
+      <div
+        class="p-4 bg-green-500 text-white rounded transform transition-all duration-300 hover:scale-110"
+      >
+        Hover to Scale Up
+      </div>
+
+      <div
+        class="p-4 bg-red-500 text-white rounded transform transition-all duration-300 hover:rotate-6"
+      >
+        Hover to Rotate
+      </div>
+    </div>
+    <div class="p-6">
+      <div
+        class="p-6 rounded text-sm bg-red-300 sm:bg-yellow-300 sm:text-base md:bg-green-300 md:text-lg lg:bg-blue-300 lg:text-xl xl:bg-purple-300 xl:text-2xl"
+      >
+        Responsive Card — Resize Window to Test Breakpoints
+      </div>
+    </div>
+    <div class="p-6 space-y-6">
+      <button
+        class="bg-blue-500 text-white px-4 py-2 rounded transition-all duration-300 hover:bg-blue-600 active:scale-95"
+      >
+        Hover & Active Button
+      </button>
+
+      <div
+        class="group bg-gray-200 p-4 rounded transition-all hover:bg-gray-300"
+      >
+        <p class="text-gray-700 group-hover:text-black">
+          This text changes when the card is hovered.
+        </p>
+      </div>
+
+      <div>
+        <input type="checkbox" id="check" class="peer hidden" />
+        <label
+          for="check"
+          class="px-3 py-2 border rounded cursor-pointer peer-checked:bg-green-500 peer-checked:text-white transition-all"
+        >
+          Check me
+        </label>
+      </div>
+    </div>
+  </body>
+</html>
