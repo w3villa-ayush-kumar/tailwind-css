@@ -103,4 +103,61 @@ A concise, utility‑focused summary of all Tailwind concepts learned.
 - Sibling-based styling uses `peer` with variants like `peer-checked:*`.
 - Enables interactive styling without custom CSS or JavaScript.
 
-More sections will be added as Tailwind learning continues.
+## 14. Dark Mode
+
+- Tailwind supports dark mode automatically using the user's system preference.
+- Dark mode styles use the `dark:` prefix, active when the OS/browser is set to dark theme.
+- No configuration file is required when using Tailwind's default media-query–based dark mode.
+- Example pattern: `bg-white dark:bg-gray-800`, `text-gray-800 dark:text-gray-100`.
+
+## 15. Sizing
+
+- Width utilities: `w-*`, fractional widths like `w-1/2`, and arbitrary values using bracket notation.
+- Height utilities: `h-*`, `h-full`, `h-screen`, and arbitrary sizing.
+- Min/max sizing: `min-w-*`, `min-h-*`, `max-w-*`, `max-h-*` for responsive constraints.
+- Aspect ratio utilities: `aspect-square`, `aspect-video`, and custom ratios (`aspect-[4/3]`).
+
+## 16. Interactivity
+
+- Cursor utilities: `cursor-pointer`, `cursor-default`, `cursor-wait`, `cursor-not-allowed`.
+- Text selection: `select-none`, `select-text`, `select-all`, `select-auto`.
+- Pointer behavior: `pointer-events-none` disables interaction; `pointer-events-auto` restores it.
+- Resize controls: `resize`, `resize-none`, `resize-x`, `resize-y`.
+- Scroll behavior: `scroll-smooth` for smooth scrolling.
+- Accent color: `accent-*` applies custom colors to radios and checkboxes.
+
+## 17. Filters & Backdrop Filters
+
+- Visual filters include `blur-*`, `brightness-*`, `contrast-*`, `grayscale`, `invert`, and `hue-rotate-*`.
+- Backdrop filters apply effects behind an element, such as `backdrop-blur-*`, `backdrop-brightness-*`, and `backdrop-contrast-*`.
+- Useful for effects like glassmorphism and softened visuals.
+
+## 18. Advanced Typography
+
+- Line height: `leading-*` controls vertical text spacing.
+- Letter spacing: `tracking-*` adjusts character spacing.
+- Text decoration: `underline`, `line-through`, with styles via `decoration-*`.
+- Text transform: `uppercase`, `lowercase`, `capitalize`.
+- Text overflow: `truncate`, `whitespace-nowrap`, and related utilities.
+
+## 19. Advanced Flex & Grid
+
+- Flex growth controlled with `flex-1` and sizing via `basis-*`.
+- Flex wrapping: `flex-wrap`, `flex-nowrap`.
+- Ordering controlled using `order-*` for responsive rearrangement.
+- Grid auto-fit/fill patterns using arbitrary values (`grid-cols-[repeat(auto-fit,minmax(...))]`).
+- Grid row behavior with `auto-rows-*`.
+- Alignment helpers like `place-items-*` and `justify-items-*`.
+
+## 20. Animations
+
+- Built-in animations include `animate-spin`, `animate-ping`, `animate-pulse`, and `animate-bounce`.
+- Custom keyframes require Tailwind's build pipeline and are not applicable in this setup.
+
+## 21. Arbitrary Values
+
+- Custom values can be applied directly using bracket notation.
+- Supports custom sizes (`w-[300px]`, `p-[3rem]`).
+- Supports custom colors (`bg-[#ff6b6b]`).
+- Allows custom shadows (`shadow-[...]`) and transforms (`rotate-[8deg]`).
+- Works without Tailwind config or build steps.

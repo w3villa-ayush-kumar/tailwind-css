@@ -165,5 +165,150 @@
         </label>
       </div>
     </div>
+    <div class="p-6">
+      <div
+        class="p-6 rounded shadow bg-white text-gray-800 dark:bg-gray-800 dark:text-gray-100"
+      >
+        <h2 class="text-xl font-semibold">Media Dark Mode</h2>
+        <p class="mt-2">Switch your OS theme to test dark mode.</p>
+      </div>
+    </div>
+    <div class="p-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+      <div
+        class="w-40 h-20 bg-blue-300 rounded flex items-center justify-center"
+      >
+        w-40
+      </div>
+
+      <div
+        class="w-full h-20 bg-green-300 rounded flex items-center justify-center"
+      >
+        w-full
+      </div>
+
+      <div
+        class="aspect-square bg-purple-300 rounded flex items-center justify-center"
+      >
+        Square
+      </div>
+
+      <div
+        class="aspect-video bg-red-300 rounded flex items-center justify-center"
+      >
+        16:9 Box
+      </div>
+    </div>
+    <div class="p-6 space-y-6">
+      <button class="px-4 py-2 bg-blue-500 text-white rounded cursor-pointer">
+        Hover → Pointer Cursor
+      </button>
+
+      <p class="p-4 bg-gray-100 rounded select-none">
+        You cannot select this text.
+      </p>
+
+      <div class="p-4 bg-red-300 rounded pointer-events-none">
+        Clicks do NOT work on this box.
+      </div>
+
+      <textarea class="w-full h-24 p-2 border rounded resize-y"></textarea>
+
+      <label class="flex items-center gap-2">
+        <input type="checkbox" class="accent-green-600" />
+        Custom Accent Color Checkbox
+      </label>
+    </div>
+    <div class="p-6 space-y-6">
+      <div class="p-4 bg-blue-300 rounded filter blur-sm">Blur Filter Box</div>
+
+      <div class="p-4 bg-green-300 rounded filter brightness-50">
+        50% Brightness
+      </div>
+
+      <div
+        class="relative h-80 bg-[url('https://picsum.photos/400')] bg-cover rounded overflow-hidden"
+      >
+        <div
+          class="absolute inset-0 backdrop-blur-sm bg-white/30 flex items-center justify-center"
+        >
+          Glassmorphism Box
+        </div>
+      </div>
+    </div>
+    <div class="p-6 space-y-6">
+      <p class="tracking-widest text-lg">W I D E L E T T E R S P A C I N G</p>
+
+      <p class="leading-loose max-w-md">
+        This paragraph has loose line height to demonstrate readable spacing
+        between lines without custom CSS.
+      </p>
+
+      <p class="underline decoration-wavy decoration-red-500 text-lg">
+        Wavy Red Underline Text
+      </p>
+
+      <p class="truncate max-w-xs bg-gray-100 p-2 rounded">
+        This is a very long line of text that will be truncated with an
+        ellipsis.
+      </p>
+    </div>
+    <div class="p-6 space-y-10">
+      <div class="flex gap-4">
+        <div class="flex-1 bg-blue-300 p-4 rounded">Flex 1</div>
+        <div class="flex-1 bg-blue-400 p-4 rounded">Flex 2</div>
+        <div class="flex-1 bg-blue-500 p-4 rounded">Flex 3</div>
+      </div>
+
+      <div class="grid gap-4 grid-cols-[repeat(auto-fit,minmax(150px,1fr))]">
+        <div class="p-4 bg-green-300 rounded">1</div>
+        <div class="p-4 bg-green-300 rounded">2</div>
+        <div class="p-4 bg-green-300 rounded">3</div>
+        <div class="p-4 bg-green-300 rounded">4</div>
+        <div class="p-4 bg-green-300 rounded">5</div>
+      </div>
+
+      <div class="flex gap-4">
+        <div class="order-3 bg-red-300 p-4 rounded">Order 3</div>
+        <div class="order-1 bg-red-400 p-4 rounded">Order 1</div>
+        <div class="order-2 bg-red-500 p-4 rounded">Order 2</div>
+      </div>
+    </div>
+    <div class="p-6 space-y-6">
+      <div
+        class="w-12 h-12 border-4 border-blue-500 border-t-transparent rounded-full animate-spin mx-auto"
+      ></div>
+
+      <div
+        class="p-6 bg-green-400 rounded animate-pulse text-center font-semibold"
+      >
+        Pulse Box
+      </div>
+
+      <button class="px-4 py-2 bg-red-500 text-white rounded animate-bounce">
+        Bouncing Button
+      </button>
+    </div>
+
+    <div class="p-6 space-y-6">
+      <div
+        class="h-20 bg-blue-300 w-[300px] rounded flex items-center justify-center"
+      >
+        w-[300px]
+      </div>
+
+      <div class="bg-fuchsia-300 p-[3.2rem] rounded">p-[3rem]</div>
+
+      <div class="bg-[#cc1b6b] text-white p-4 rounded">bg-[#cc1b6b]</div>
+
+      <div
+        class="p-4 bg-white rounded shadow-[0_4px_20px_rgba(100,200,300,0.5)]"
+      >
+        Custom Shadow
+      </div>
+
+      <div class="p-4 bg-yellow-300 rounded inline-block rotate-[8deg]">
+        rotate-[8deg]
+      </div>
+    </div>
   </body>
 </html>
